@@ -24,7 +24,7 @@ fn main() {
     let list_of_strings2: Vec<String> = list_of_numbers.iter().map(ToString::to_string).collect();
 
     assert_eq!(list_of_strings, list_of_strings2);
-
+    
     let list_of_statuses: Vec<Status> = (0u32..6).map(Status::Value).collect();
     let statuses = vec![Status::Value(0),
                         Status::Value(1),
